@@ -21,3 +21,5 @@ jobs:
       run: echo "${{ toJSON(runner) }}"
     - name: Dump matrix context
       run: echo "${{ toJSON(matrix) }}"
+    - name: Echo my secret
+      run: echo "MY_SECRET is ${{ secrets.MY_SECRET }}"
